@@ -5,7 +5,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "UI/ UX Design & Frontend Engineer",
-  avatar: "/images/foto_sendiri.png",
+  avatar: "/images/og/avatar.png", // Path to your avatar image
   email: "debbyazzahra05@gmail.com",
   location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
@@ -49,10 +49,10 @@ const social = [
 
 const home = {
   path: "/",
-  image: "/images/foto_sendiri.png", // Ganti path gambar di sini
+  image: "/images/og/avatar.png", // Ganti path gambar di sini
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  // description: `Portfolio website showcasing my work as a ${person.role}`,
+  description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: (
     <>
       Hi, This Is
