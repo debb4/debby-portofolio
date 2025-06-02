@@ -51,7 +51,7 @@ const home = {
   path: "/",
   image: "/images/og/avatar.png", // Ganti path gambar di sini
   label: "Home",
-  title: `${person.name}&rsquo;s Portfolio`,
+  title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: (
     <>
