@@ -1,6 +1,7 @@
 "use client";
 
 import classNames from "classnames";
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect } from "react";
 import { Flex } from ".";
@@ -57,13 +58,11 @@ const Logo: React.FC<LogoProps> = ({
       )}
       {iconSrc && (
         // @ts-ignore
-        <img
-          style={{
-            height: `var(--static-space-${sizeMap[size]})`,
-            width: "auto",
-          }}
-          alt="Trademark"
+        <Image
           src={iconSrc}
+          alt="Trademark"
+          height={Number(sizeMap[size])}
+          width={undefined} // or specify width if needed
         />
       )}
       {wordmark && !wordmarkSrc && (
@@ -76,13 +75,11 @@ const Logo: React.FC<LogoProps> = ({
       )}
       {wordmarkSrc && (
         // @ts-ignore
-        <img
-          style={{
-            height: `var(--static-space-${sizeMap[size]})`,
-            width: "auto",
-          }}
-          alt="Trademark"
+        <Image
           src={wordmarkSrc}
+          alt="Trademark"
+          height={Number(sizeMap[size])}
+          width={undefined} // or specify width if needed
         />
       )}
     </>

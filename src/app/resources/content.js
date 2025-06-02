@@ -13,7 +13,7 @@ const person = {
 
 const newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
+  title: <>Subscribe to {person.firstName}&rsquo;s Newsletter</>,
   description: (
     <>
       I occasionally write about design, technology, and share thoughts on the
@@ -51,7 +51,7 @@ const home = {
   path: "/",
   image: "/images/og/avatar.png", // Ganti path gambar di sini
   label: "Home",
-  title: `${person.name}'s Portfolio`,
+  title: `${person.name}&rsquo;s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
   headline: (
     <>
@@ -67,7 +67,7 @@ const home = {
   },
   subline: (
     <>
-      I'm a UI/UX Designer & Frontend engineer, Making the digital world feel
+      Im a UI/UX Designer & Frontend engineer, Making the digital world feel
       more like you - through thoughtful design and precise code.
     </>
   ),
