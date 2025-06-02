@@ -67,9 +67,8 @@ const home = {
   },
   subline: (
     <>
-      I'm a UI/UX Designer & Frontend engineer,
-      <br /> Making the digital world feel more like you - through thoughtful
-      design and precise code.
+      I'm a UI/UX Designer & Frontend engineer, Making the digital world feel
+      more like you - through thoughtful design and precise code.
     </>
   ),
 };

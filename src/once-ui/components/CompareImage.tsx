@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useRef, useEffect } from "react";
-import { Flex, SmartImage, IconButton } from ".";
+import { useEffect, useRef, useState } from "react";
+import { Flex, IconButton, SmartImage } from ".";
 import styles from "./CompareImage.module.scss";
 
 interface SideContent {
@@ -34,7 +34,11 @@ const renderContent = (content: SideContent, clipPath: string) => {
   );
 };
 
-export const CompareImage = ({ leftContent, rightContent, ...rest }: CompareImageProps) => {
+export const CompareImage = ({
+  leftContent,
+  rightContent,
+  ...rest
+}: CompareImageProps) => {
   const [position, setPosition] = useState(50);
   const containerRef = useRef<HTMLDivElement>(null);
   const isDragging = useRef(false);
